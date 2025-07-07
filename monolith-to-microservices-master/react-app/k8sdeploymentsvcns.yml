@@ -1,0 +1,42 @@
+# Namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: reactfe
+---
+# Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reactfe-deployment
+  namespace: reactfe
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: reactfe
+  template:
+    metadata:
+      labels:
+        app: reactfe
+    spec:
+      containers:
+      - name: reactfe
+        image: gcr.io/qwiklabs-gcp-04-c8629adeaefd/reactfe:v1
+        ports:
+        - containerPort: 80
+---
+# Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: reactfe-service
+  namespace: reactfe
+spec:
+  selector:
+    app: reactfe
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  type: LoadBalancer
