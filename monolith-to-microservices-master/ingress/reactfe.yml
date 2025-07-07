@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: reactfe
-        image: gcr.io/qwiklabs-gcp-03-68357c2ac320/reactfe:v1
+        image: anupdudhe/reactfe:v1
         ports:
         - containerPort: 80
 ---
