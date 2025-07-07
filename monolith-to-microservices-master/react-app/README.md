@@ -1,3 +1,10 @@
+### docker image building process after you enter the api entries in the .env
+```
+cd reactfe
+docker build -t anupdudhe/reactfe:v1 
+docker push anupdudhe/reactfe:v1
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
