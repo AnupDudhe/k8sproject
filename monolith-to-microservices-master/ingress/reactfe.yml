@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: reactfe
-        image: anupdudhe/reactfe:v1
+        image: anupdudhe/reactfe:v2
         ports:
         - containerPort: 80
 ---
