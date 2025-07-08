@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: gcr.io/qwiklabs-gcp-03-68357c2ac320/frontend:v1
+        image: anupdudhe/frontend:v1
         ports:
         - containerPort: 8080  #Refers to internal app port inside containers
         resources:
