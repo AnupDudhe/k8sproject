@@ -1,7 +1,7 @@
 ### docker image building process after you enter the api entries in the .env
 ```
 cd reactfe
-docker build -t anupdudhe/reactfe:v1 
+docker build -t . anupdudhe/reactfe:v1 
 docker push anupdudhe/reactfe:v1
 ```
 
