@@ -1,4 +1,9 @@
 # Monolith to Microservices
+### creating ingress controller in specific namespace use following command
+```
+helm install my-release oci://ghcr.io/nginx/charts/nginx-ingress --version 2.1.0 --namespace ingress-nginx
+```
+
 ### Steps to deploy this microservices i.e frontend , orders, products and reactjs based frontend on gcp gke with VPC-native clusters.
 
 
