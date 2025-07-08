@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: orders
-        image: gcr.io/qwiklabs-gcp-03-68357c2ac320/orders:v1
+        image: anupdudhe/orders:v1
         ports:
         - containerPort: 8081
 ---
